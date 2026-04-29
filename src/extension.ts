@@ -8,7 +8,7 @@ import { LanguageClient } from 'vscode-languageclient/node';
 let client: LanguageClient;
 export async function activate(context: ExtensionContext) {
 	try {
-		execSync(`bish -h`);
+		execSync(`bish --help`);
 	} catch {
 		await vscode.window.showErrorMessage("Cannot find bish!");
 		return;

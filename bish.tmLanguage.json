@@ -36,11 +36,11 @@
             "patterns": [
                 {
                     "name": "keyword.control.bish",
-                    "match": "\\b(if|else|break|continue|while|do|for|func|return|yield|class|try|catch|throw|finally)\\b"
+                    "match": "\\b(if|else|break|continue|while|do|for|func|return|yield|await|async|extend|class|throw|try)\\b"
                 },
                 {
                     "name": "keyword.other.pattern.bish",
-                    "match": "\\b(is|of|not|and|or|as|when)\\b"
+                    "match": "\\b(is|of|err|not|and|or|as|when|switch|case)\\b"
                 },
                 {
                     "name": "storage.type.bish",
@@ -60,15 +60,11 @@
                 },
                 {
                     "name": "entity.name.function.access.bish",
-                    "match": "\\b(get|set|del)(\\s*\\b([a-zA-Z_][a-zA-Z0-9_]*)|\\[\\s*\\])?"
+                    "match": "\\b(get|set|def|del)(\\s*\\b([a-zA-Z_][a-zA-Z0-9_]*)|\\[\\s*\\])?"
                 },
                 {
-                    "name": "entity.name.function.init.bish",
-                    "match": "\\b(init)\\b"
-                },
-                {
-                    "name": "entity.name.function.create.bish",
-                    "match": "\\b(create)\\b"
+                    "name": "entity.name.function.hook.bish",
+                    "match": "\\b(init|create|bind|enter|exit)\\b"
                 },
                 {
                     "name": "entity.name.function.builtin.bish",
